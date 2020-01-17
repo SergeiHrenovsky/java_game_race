@@ -2,12 +2,18 @@ package ru.java2e;
 import java.awt.Image;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
+import java.util.concurrent.TimeUnit;
 
 public class Player{
+    public static final int MAX_SPEED = 500;
+    public static final int MIN_SPEED = 0;
+    public static final int MAX_TOP = 130;
+    public static final int MAX_BOTTOM = 285;
+
     Image img = new ImageIcon("res/car_straight.png").getImage();
 
     int speed = 1;
-    int speed_up = 0;
+    int speed_up;
     int move_up_down = 0;
     int distance = 0;
 
@@ -26,24 +32,29 @@ public class Player{
             layer2 -= speed;
         }
         speed += speed_up;
+        if (speed >= MAX_SPEED) speed = MAX_SPEED;
+        if (speed <= MIN_SPEED) speed = MIN_SPEED;
+        if (y <= MAX_TOP) y = MAX_TOP;
+        if (y >= MAX_BOTTOM) y = MAX_BOTTOM;
         y -= move_up_down;
         distance += speed;
         move_up_down = 0;
     }
 
-
-    public void keyPressed(KeyEvent e){
+    public void keyPressed(KeyEvent e) throws InterruptedException {
         int key = e.getKeyCode();
         if (key == KeyEvent.VK_RIGHT) {
             speed_up = 1;
+            TimeUnit.MILLISECONDS.sleep(200);
         }
         if (key == KeyEvent.VK_LEFT) {
             speed_up = -1;
+            TimeUnit.MILLISECONDS.sleep(200);
         }
-        if (key == KeyEvent.VK_UP && y > 130) {
+        if (key == KeyEvent.VK_UP && y > MAX_TOP) {
             move_up_down = 10;
         }
-        if (key == KeyEvent.VK_DOWN && y < 285) {
+        if (key == KeyEvent.VK_DOWN && y < MAX_BOTTOM) {
             move_up_down = -10;
         }
     }

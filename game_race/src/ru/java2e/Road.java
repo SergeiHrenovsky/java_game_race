@@ -10,7 +10,6 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-
 import javax.swing.Timer;
 
 public class Road extends JPanel implements ActionListener{
@@ -19,7 +18,9 @@ public class Road extends JPanel implements ActionListener{
 
     Image img = new ImageIcon("res/road.png").getImage();
 
-    Player p = new Player();
+    Player player = new Player();
+
+    Enemy enemy = new Enemy(850, 150, 1, this );
 
     public Road() {
         mainTimer.start();
@@ -29,23 +30,29 @@ public class Road extends JPanel implements ActionListener{
 
     private class MyKeyAdapter extends KeyAdapter {
         public void keyPressed(KeyEvent e){
-            p.keyPressed(e);
+            try {
+                player.keyPressed(e);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
         }
 
         public void keyReleased(KeyEvent e){
-            p.keyReleased(e);
+            player.keyReleased(e);
         }
     }
 
     public void paint(Graphics g){
         g = (Graphics2D) g;
-        g.drawImage(img, p.layer1, 0, null);
-        g.drawImage(img, p.layer2, 0, null);
-        g.drawImage(p.img, p.x, p.y, null);
+        g.drawImage(img, player.layer1, 0, null);
+        g.drawImage(img, player.layer2, 0, null);
+        g.drawImage(player.img, player.x, player.y, null);
+        g.drawImage(enemy.img, enemy.x, enemy.y, null);
     }
 
     public void actionPerformed(ActionEvent e) {
-        p.move();
+        player.move();
+        enemy.move();
         repaint();
     }
 }

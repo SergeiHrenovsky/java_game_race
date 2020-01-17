@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e6f1b77-2014-469d-ade3-dd983c9aa231" name="Default Changelist" comment="" />
+    <list default="true" id="6e6f1b77-2014-469d-ade3-dd983c9aa231" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/java2e/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/game_race/ru/java2e/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game_race/ru/java2e/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/game_race/ru/java2e/Road$MyKeyAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game_race/ru/java2e/Road$MyKeyAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/game_race/ru/java2e/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game_race/ru/java2e/Road.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/car_enemy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/java2e/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/java2e/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/java2e/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/java2e/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/java2e/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/java2e/Road.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +25,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1VLovHU3i7fB0rdgLd6FeFWZ8Dd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +37,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -73,22 +90,30 @@
       <screen x="61" y="27" width="1305" height="741" />
     </state>
     <state x="573" y="94" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/61.27.1305.741@61.27.1305.741" timestamp="1578944265842" />
-    <state width="980" height="77" key="GridCell.Tab.0.bottom" timestamp="1579030858263">
+    <state x="467" y="178" width="430" height="424" key="#com.intellij.uiDesigner.palette.ComponentItemDialog" timestamp="1579195796819">
       <screen x="61" y="27" width="1305" height="741" />
     </state>
-    <state width="980" height="77" key="GridCell.Tab.0.bottom/61.27.1305.741@61.27.1305.741" timestamp="1579030858263" />
-    <state width="980" height="77" key="GridCell.Tab.0.center" timestamp="1579030858263">
+    <state x="467" y="178" width="430" height="424" key="#com.intellij.uiDesigner.palette.ComponentItemDialog/61.27.1305.741@61.27.1305.741" timestamp="1579195796819" />
+    <state width="980" height="77" key="GridCell.Tab.0.bottom" timestamp="1579244629596">
       <screen x="61" y="27" width="1305" height="741" />
     </state>
-    <state width="980" height="77" key="GridCell.Tab.0.center/61.27.1305.741@61.27.1305.741" timestamp="1579030858263" />
-    <state width="980" height="77" key="GridCell.Tab.0.left" timestamp="1579030858263">
+    <state width="980" height="77" key="GridCell.Tab.0.bottom/61.27.1305.741@61.27.1305.741" timestamp="1579244629596" />
+    <state width="980" height="77" key="GridCell.Tab.0.center" timestamp="1579244629595">
       <screen x="61" y="27" width="1305" height="741" />
     </state>
-    <state width="980" height="77" key="GridCell.Tab.0.left/61.27.1305.741@61.27.1305.741" timestamp="1579030858263" />
-    <state width="980" height="77" key="GridCell.Tab.0.right" timestamp="1579030858263">
+    <state width="980" height="77" key="GridCell.Tab.0.center/61.27.1305.741@61.27.1305.741" timestamp="1579244629595" />
+    <state width="980" height="77" key="GridCell.Tab.0.left" timestamp="1579244629595">
       <screen x="61" y="27" width="1305" height="741" />
     </state>
-    <state width="980" height="77" key="GridCell.Tab.0.right/61.27.1305.741@61.27.1305.741" timestamp="1579030858263" />
+    <state width="980" height="77" key="GridCell.Tab.0.left/61.27.1305.741@61.27.1305.741" timestamp="1579244629595" />
+    <state width="980" height="77" key="GridCell.Tab.0.right" timestamp="1579244629596">
+      <screen x="61" y="27" width="1305" height="741" />
+    </state>
+    <state width="980" height="77" key="GridCell.Tab.0.right/61.27.1305.741@61.27.1305.741" timestamp="1579244629596" />
+    <state x="61" y="113" width="432" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579243728560">
+      <screen x="61" y="27" width="1305" height="741" />
+    </state>
+    <state x="61" y="113" width="432" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/61.27.1305.741@61.27.1305.741" timestamp="1579243728560" />
     <state x="427" y="181" width="524" height="463" key="extract.method.dialog" timestamp="1578642517997">
       <screen x="61" y="27" width="1305" height="741" />
     </state>

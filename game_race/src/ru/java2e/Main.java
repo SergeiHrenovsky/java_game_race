@@ -1,5 +1,4 @@
 package ru.java2e;
-
 import javax.swing.*;
 
 public class Main {
